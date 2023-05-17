@@ -1,0 +1,163 @@
+/* global rules */
+
+
+
+* {
+    text-decoration: none;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    transition: .3s all;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    font-size: 1.5rem;
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  hsl(216, 12%, 8%);
+  }
+  @media (max-width: 1200px) {
+    html {
+      font-size: 60%;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    html {
+      font-size: 58%;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    html {
+      font-size: 55%;
+    }
+  }
+  @media (max-width: 450px) {
+    html {
+      font-size: 50%;
+    }
+  }
+  
+  /* end globle rules */
+  
+
+
+  .rating-card , .result{
+    padding: 3rem;
+    max-width: 39rem;
+    background-color:#1a212b;
+    border: none;
+    border-radius: 2rem;
+    
+  }
+
+  .first{
+    z-index: 3;
+  }
+ .rating-card .star{
+    margin-bottom: 3rem;
+    width: 5rem;
+    height: 5rem;
+    border: none;
+    border-radius: 50%;
+    background-color:  #272e38;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+ .rating-card .title{
+    color: white;
+    margin: 2rem 0;
+  }
+
+ .rating-card p{
+    color: hsl(217, 12%, 63%);
+    line-height: 1.6;
+    margin: 2rem 0;
+    margin-right: 3rem;
+  }
+
+.rating-card ul{
+  margin: 3rem 0;
+}
+
+  .rating-card ul li {
+    display: inline-block;
+   margin-right: 2rem;
+    width: 5rem;
+    height: 5rem;
+    border: none;
+    border-radius: 50%;
+    background-color:  #272e38;
+    text-align: center;
+   line-height: 5rem;
+   color: hsl(216, 12%, 54%);
+   font-size: 2rem;
+   cursor: pointer;
+  }
+.rating-card ul li:hover , .rating-card ul li.active{
+  color: white;
+  background-color: hsl(25, 97%, 53%);
+}
+
+  .rating-card button{
+    display: block;
+    width: 100%;
+    height: 4rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    cursor: pointer;
+  }
+  .rating-card button:hover {
+    color:  hsl(25, 97%, 53%)  ;
+    background-color: white;
+  }
+
+
+
+  /* result */
+
+
+  .result{
+    text-align: center;
+    position: absolute;
+  }
+  .result img{
+    margin:  auto;
+  }
+
+  .result > span{
+    display: block;
+    color: hsl(25, 97%, 53%);
+    font-size: 1.6rem;
+    margin: 3rem auto;
+    background-color: hsl(213, 19%, 18%);
+    width: 50%;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 2rem;
+  }
+
+  .result h1{
+    color: white;
+    margin-bottom: 2rem;
+   ;
+  }
+
+  .result p{
+    color: hsl(217, 12%, 63%);
+    line-height: 2;
+  }
